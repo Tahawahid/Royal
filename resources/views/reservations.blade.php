@@ -1,15 +1,5 @@
 @extends('layouts.app')
 
-@php
-    $timeOptions = [];
-
-    for ($hour = 0; $hour < 24; $hour++) {
-        foreach ([0, 30] as $minute) {
-            $timeOptions[] = sprintf('%02d:%02d', $hour, $minute);
-        }
-    }
-@endphp
-
 @section('content')
     <section class="mx-auto max-w-6xl px-6 py-12 md:py-16">
         <div class="space-y-6">

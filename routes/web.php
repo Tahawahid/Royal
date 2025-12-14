@@ -14,7 +14,15 @@ Route::post('/', QuoteController::class)
     ->name('quote.store');
 
 // Reservations
-Route::view('/reservations', 'reservations')->name('reservations');
+Route::get('/reservations', function () {
+    $timeOptions = [];
+    for ($hour = 0; $hour < 24; $hour++) {
+        foreach ([0, 30] as $minute) {
+            $timeOptions[] = sprintf('%02d:%02d', $hour, $minute);
+        }
+    }
+    return view('reservations', compact('timeOptions'));
+})->name('reservations');
 
 Route::post('/reservations', ReservationController::class)
     ->middleware('throttle:10,1')
