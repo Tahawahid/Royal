@@ -41,8 +41,8 @@
                     <img src="{{ asset('assets/images/logo.png') }}" alt="Royal Carriages" class="h-8 w-auto object-contain" loading="lazy">
                 </div>
                 <div class="flex flex-wrap gap-3">
-                    <a href="mailto:hello@royalcarriages.test" class="rounded-full bg-slate-100 px-3 py-1.5 text-slate-700 transition hover:bg-amber-50 hover:text-amber-700">
-                        hello@royalcarriages.test
+                    <a href="mailto:quote@royalcarriages.test" class="rounded-full bg-slate-100 px-3 py-1.5 text-slate-700 transition hover:bg-amber-50 hover:text-amber-700">
+                        quote@royalcarriages.test
                     </a>
                     <span class="rounded-full bg-slate-100 px-3 py-1.5 text-slate-700">Available 24/7</span>
                 </div>
