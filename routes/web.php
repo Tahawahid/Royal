@@ -15,6 +15,8 @@ Route::post('/', QuoteController::class)
 
 // Reservations
 Route::get('/reservations', function () {
+    dd('Route reached'); // Debug point 1
+
     $timeOptions = [];
     for ($hour = 0; $hour < 24; $hour++) {
         foreach ([0, 30] as $minute) {
